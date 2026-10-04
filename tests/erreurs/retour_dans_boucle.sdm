@@ -1,0 +1,5 @@
+// ERREUR : ne renvoie pas de valeur sur tous les chemins
+int f(int n) {
+    while (n > 0) { return n; }
+}
+main() { print(f(1)); }

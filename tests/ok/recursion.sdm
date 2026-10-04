@@ -1,0 +1,31 @@
+// Récursivité, récursivité croisée, fonction définie après son appel
+int fib(int n) {
+    if (n < 2) return n;
+    else return fib(n - 1) + fib(n - 2);
+}
+
+boolean pair(int n) {
+    if (n == 0) return true;
+    else return impair(n - 1);
+}
+
+boolean impair(int n) {
+    if (n == 0) return false;
+    else return pair(n - 1);
+}
+
+int pgcd(int a, int b) {
+    while (b != 0) {
+        int r = a - a / b * b;
+        a = b;
+        b = r;
+    }
+    return a;
+}
+
+main() {
+    print(fib(15));
+    print(pair(10));
+    print(impair(10));
+    print(pgcd(1071, 462));
+}

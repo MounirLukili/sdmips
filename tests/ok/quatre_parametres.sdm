@@ -1,0 +1,14 @@
+// Quatre paramètres (le maximum) et appels imbriqués
+int combine(int a, int b, int c, int d) {
+    return a * 1000 + b * 100 + c * 10 + d;
+}
+
+int max(int a, int b) {
+    if (a > b) return a;
+    else return b;
+}
+
+main() {
+    print(combine(1, 2, 3, 4));
+    print(combine(max(4, 9), max(8, 2), 0, max(-1, -5)));
+}

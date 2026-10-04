@@ -1,0 +1,5 @@
+// ERREUR : doit renvoyer int
+int f() {
+    return true;
+}
+main() { print(f()); }

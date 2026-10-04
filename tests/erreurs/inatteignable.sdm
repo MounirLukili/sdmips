@@ -1,0 +1,6 @@
+// ERREUR : instruction inatteignable
+int f() {
+    return 1;
+    print(2);
+}
+main() { print(f()); }

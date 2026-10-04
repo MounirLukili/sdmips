@@ -1,0 +1,19 @@
+int sum(int n){
+    int[] t;
+    t = new int[n];
+    int i;
+    i = 0;
+    int s;
+    s = 0;
+    while(i < n){
+        t[i] = i;
+        s = s + t[i];
+        i = i + 1;
+    }
+    return s;
+}
+
+main(){
+    print(sum(5));
+    print(sum(10));
+}

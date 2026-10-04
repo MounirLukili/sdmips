@@ -1,0 +1,5 @@
+// ERREUR : l'indice d'un tableau doit être de type int
+main() {
+    int[] t = new int[2];
+    t[true] = 1;
+}

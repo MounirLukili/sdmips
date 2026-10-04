@@ -1,0 +1,10 @@
+int f(int y){
+    return y+1;
+}
+
+main(){
+    int[] tab = new int[3];
+    tab[0] = 10;
+    tab[1] = f(tab[0]);
+    print(tab[1]);
+}

@@ -1,0 +1,32 @@
+// Tableaux passés en paramètre et renvoyés par une fonction : tri à bulles
+int[] remplir(int n) {
+    int[] t = new int[n];
+    int i;
+    for (i = 0; i < n; i++;) {
+        t[i] = (i * 7 + 3) - (i * 7 + 3) / 10 * 10;   // (7i + 3) mod 10
+    }
+    return t;
+}
+
+int trier(int[] t, int n) {
+    int i;
+    int j;
+    for (i = 0; i < n - 1; i++;) {
+        for (j = 0; j < n - 1 - i; j++;) {
+            if (t[j] > t[j + 1]) {
+                int tmp = t[j];
+                t[j] = t[j + 1];
+                t[j + 1] = tmp;
+            } else {}
+        }
+    }
+    return 0;
+}
+
+main() {
+    int n = 6;
+    int[] t = remplir(n);
+    int ignore = trier(t, n);
+    int i;
+    for (i = 0; i < n; i++;) print(t[i]);
+}

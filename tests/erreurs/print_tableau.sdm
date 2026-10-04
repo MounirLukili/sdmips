@@ -1,0 +1,5 @@
+// ERREUR : print n'accepte que des int ou des boolean
+main() {
+    int[] t = new int[2];
+    print(t);
+}

@@ -1,0 +1,5 @@
+// ERREUR : variable y non déclarée
+main() {
+    int x = 3;
+    print(y);
+}

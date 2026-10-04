@@ -1,0 +1,5 @@
+// ERREUR : la condition du if doit être de type boolean
+main() {
+    int x = 1;
+    if (x) print(1); else print(2);
+}

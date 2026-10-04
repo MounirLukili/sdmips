@@ -1,0 +1,5 @@
+// ERREUR : impossible d'affecter
+main() {
+    int x;
+    x = true;
+}

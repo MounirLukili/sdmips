@@ -1,0 +1,10 @@
+// read() : somme d'entiers lus au clavier, jusqu'à lire 0
+main() {
+    int somme = 0;
+    int x = read();
+    while (x != 0) {
+        somme = somme + x;
+        x = read();
+    }
+    print(somme);
+}

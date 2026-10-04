@@ -1,0 +1,15 @@
+// Priorité et associativité des opérateurs
+main() {
+    print(1 + 2 * 3);         // 7
+    print((1 + 2) * 3);       // 9
+    print(10 - 2 - 3);        // 5   (associativité à gauche)
+    print(100 / 10 / 5);      // 2
+    print(-2 * 3);            // -6
+    print(7 - -3);            // 10
+    print(2 + 3 * 4 - 6 / 2); // 11
+    int x = 5;
+    print(x > 2 && x < 9);            // true
+    print(x < 2 || x == 5 && x != 4); // true  (&& avant ||)
+    print(!(x >= 5));                 // false
+    print(1 + 1 == 2);                // true  (+ avant ==)
+}

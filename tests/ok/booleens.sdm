@@ -1,0 +1,20 @@
+/* Variables, paramètres et fonctions booléennes */
+boolean estPair(int n) {
+    return n / 2 * 2 == n;
+}
+
+boolean ouExclusif(boolean a, boolean b) {
+    return (a || b) && !(a && b);
+}
+
+main() {
+    boolean b = true;
+    print(b);
+    print(!b);
+    print(estPair(10));
+    print(estPair(7));
+    print(ouExclusif(true, false));
+    print(ouExclusif(true, true));
+    print(b == estPair(4));
+    print(false != false);
+}

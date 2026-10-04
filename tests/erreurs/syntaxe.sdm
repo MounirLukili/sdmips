@@ -1,0 +1,5 @@
+// ERREUR : de syntaxe
+main() {
+    int x = 3
+    print(x);
+}

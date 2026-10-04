@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Simulateur MIPS (SPIM)
+        run: sudo apt-get update && sudo apt-get install -y spim
+
+      - name: Compilation
+        run: make
+
+      - name: Tests
+        run: make test

@@ -1,0 +1,16 @@
+# Compilation
+build/
+lib/
+*.class
+
+# Assembleur produit par le compilateur (les routines de runtime/ sont suivies)
+*.asm
+!runtime/*.asm
+
+# Éditeurs / systèmes
+.idea/
+*.iml
+.vscode/
+out/
+.DS_Store
+__MACOSX/

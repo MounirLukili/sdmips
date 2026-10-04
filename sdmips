@@ -1,0 +1,8 @@
+#!/bin/sh
+# Lance le compilateur SDM -> MIPS (compiler d'abord avec « make »).
+JAR="$(dirname "$0")/build/sdmips.jar"
+if [ ! -f "$JAR" ]; then
+    echo "sdmips : $JAR introuvable, lancez d'abord « make »." >&2
+    exit 1
+fi
+exec java -jar "$JAR" "$@"

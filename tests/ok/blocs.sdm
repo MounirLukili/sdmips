@@ -1,0 +1,21 @@
+// Le même nom de variable dans deux blocs frères, if imbriqués
+int signe(int x) {
+    if (x > 0) {
+        int r = 1;
+        return r;
+    } else {
+        if (x == 0) {
+            int r = 0;
+            return r;
+        } else {
+            int r = -1;
+            return r;
+        }
+    }
+}
+
+main() {
+    print(signe(42));
+    print(signe(0));
+    print(signe(-7));
+}

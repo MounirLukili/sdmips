@@ -1,0 +1,2 @@
+// ERREUR : attend deux int
+main() { print(true + 1); }

@@ -1,0 +1,2 @@
+// ERREUR : fonction g non définie
+main() { print(g(1)); }

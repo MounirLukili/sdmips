@@ -1,0 +1,5 @@
+// ERREUR : variable x déjà déclarée
+main() {
+    int x = 1;
+    { int x = 2; }
+}
